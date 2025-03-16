@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usługi - AutoMech</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Auto<span>Mech<span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="about.html">O Nas</a></li>
+                <li><a href="services.html">Usługi</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="services">
+        <h2>Nasze Usługi</h2>
+        <div class="service-list">
+            <!-- Przegląd techniczny -->
+            <div class="service-item">
+                <img src="/img/service1.jpg" alt="Przegląd techniczny">
+                <h3>Przegląd techniczny</h3>
+                <p>Kompleksowy przegląd stanu technicznego pojazdu.</p>
+                <p><strong>Cena:</strong> 200 zł</p>
+                <button onclick="addService('Przegląd techniczny', 200)">Dodaj do zamówienia</button>
+            </div>
+
+            <!-- Wymiana oleju -->
+            <div class="service-item">
+                <img src="/img/service2.jpg" alt="Wymiana oleju">
+                <h3>Wymiana oleju</h3>
+                <p>Wymiana oleju silnikowego oraz filtra oleju.</p>
+                <p><strong>Cena:</strong> 150 zł</p>
+                <button onclick="addService('Wymiana oleju', 150)">Dodaj do zamówienia</button>
+            </div>
+
+            <!-- Wymiana hamulców -->
+            <div class="service-item">
+                <img src="/img/service3.jpg" alt="Wymiana hamulców">
+                <h3>Wymiana hamulców</h3>
+                <p>Wymiana klocków i tarcz hamulcowych.</p>
+                <p><strong>Cena:</strong> 400 zł</p>
+                <button onclick="addService('Wymiana hamulców', 400)">Dodaj do zamówienia</button>
+            </div>
+
+            <!-- Diagnostyka komputerowa -->
+            <div class="service-item">
+                <img src="/img/service4.jpg" alt="Diagnostyka komputerowa">
+                <h3>Diagnostyka komputerowa</h3>
+                <p>Kompleksowa diagnostyka komputerowa pojazdu.</p>
+                <p><strong>Cena:</strong> 100 zł</p>
+                <button onclick="addService('Diagnostyka komputerowa', 100)">Dodaj do zamówienia</button>
+            </div>
+
+            <!-- Wymiana opon -->
+            <div class="service-item">
+                <img src="/img/service5.jpg" alt="Wymiana opon">
+                <h3>Wymiana opon</h3>
+                <p>Sezonowa wymiana opon z wyważeniem.</p>
+                <p><strong>Cena:</strong> 50 zł</p>
+                <button onclick="addService('Wymiana opon', 50)">Dodaj do zamówienia</button>
+            </div>
+
+            <!-- Wymiana rozrządu -->
+            <div class="service-item">
+                <img src="/img/service6.jpg" alt="Wymiana rozrządu">
+                <h3>Wymiana rozrządu</h3>
+                <p>Wymiana paska/łańcucha rozrządu.</p>
+                <p><strong>Cena:</strong> 600 zł</p>
+                <button onclick="addService('Wymiana rozrządu', 600)">Dodaj do zamówienia</button>
+            </div>
+
+            <!-- Klimatyzacja -->
+            <div class="service-item">
+                <img src="/img/service1.jpg" alt="Serwis klimatyzacji">
+                <h3>Serwis klimatyzacji</h3>
+                <p>Przegląd, napełnianie i dezynfekcja klimatyzacji.</p>
+                <p><strong>Cena:</strong> 200 zł</p>
+                <button onclick="addService('Serwis klimatyzacji', 200)">Dodaj do zamówienia</button>
+            </div>
+        </div>
+
+        <!-- Umawianie wizyty -->
+        <div class="booking-form">
+            <h3>Umów wizytę</h3>
+            <form id="bookingForm">
+                <label for="carBrand">Marka samochodu:</label>
+                <input type="text" id="carBrand" name="carBrand" required>
+
+                <label for="carModel">Model samochodu:</label>
+                <input type="text" id="carModel" name="carModel" required>
+
+                <label for="carPlate">Numer rejestracyjny:</label>
+                <input type="text" id="carPlate" name="carPlate" required>
+
+                <label for="date">Data:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Godzina:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="name">Imię i Nazwisko:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <button type="submit">Zamów</button>
+            </form>
+        </div>
+
+        <!-- Podsumowanie zamówienia -->
+        <div class="summary">
+            <h3>Podsumowanie zamówienia</h3>
+            <ul id="selectedServices"></ul>
+            <p>Łączna cena: <span id="totalPrice">0</span> zł</p>
+            <div id="orderConfirmation" style="display: none; color: green; font-weight: bold; margin-top: 20px;">
+                Dziękujemy! Twoje zamówienie zostało złożone.
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 AutoMech. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

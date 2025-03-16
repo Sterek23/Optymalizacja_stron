@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - AutoMech</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Auto<span>Mech<span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="about.html">O Nas</a></li>
+                <li><a href="services.html">Usługi</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h2>Kontakt</h2>
+        <div class="contact-info">
+            <p><strong>Godziny otwarcia:</strong> Pon-Pt: 8:00 - 18:00, Sob: 9:00 - 14:00</p>
+            <p><strong>Adres:</strong> ul. Kucelińska 23, Częstochowa</p>
+            <p><strong>Telefon:</strong> +48 123 456 789</p>
+        </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1260.2080813911664!2d19.10830919839477!3d50.823454999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4710b7003eb3aa67%3A0x1d770b5a44a4b312!2sWydzia%C5%82%20Informatyki%20i%20Sztucznej%20Inteligencji%2C%20Politechnika%20Cz%C4%99stochowska!5e0!3m2!1spl!2spl!4v1740857936683!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Imię i Nazwisko:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Wyślij</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 AutoMech. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>
